@@ -1,0 +1,22 @@
+.header-container {
+  background: black;
+  width: 100%;
+}
+
+.header {
+  height: 60px;
+  margin: auto;
+  padding: 0;
+  width: 1000px;
+}
+
+span {
+  padding: 8px;
+  color: white;
+  cursor: pointer;
+  margin: auto 0;
+
+  &:hover {
+    background: darkgray;
+  }
+}
