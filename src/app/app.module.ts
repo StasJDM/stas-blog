@@ -8,6 +8,11 @@ import { HeaderComponent } from './components/header/header.component';
 import { PageBlogComponent } from './pages/page-blog/page-blog.component';
 import { PageHomeComponent } from './pages/page-home/page-home.component';
 import { PageProfileComponent } from './pages/page-profile/page-profile.component';
+import { PublicationComponent } from './components/publication/publication.component';
+import { FeedComponent } from './components/feed/feed.component';
+import { PageLoginComponent } from './pages/page-login/page-login.component';
+import { FormLoginComponent } from './forms/form-login/form-login.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,8 +22,12 @@ import { PageProfileComponent } from './pages/page-profile/page-profile.componen
     PageBlogComponent,
     PageHomeComponent,
     PageProfileComponent,
+    PublicationComponent,
+    FeedComponent,
+    PageLoginComponent,
+    FormLoginComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
