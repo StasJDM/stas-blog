@@ -1,0 +1,17 @@
+.form-field {
+  margin: 8px 0;
+}
+
+.login-form button {
+  box-shadow: 0 0 0 2px #212121;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: #616161;
+  width: 140px;
+  height: 40px;
+
+  &:hover {
+    background-color: #424242;
+  }
+}

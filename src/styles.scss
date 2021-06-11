@@ -1,5 +1,21 @@
 @import "normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: #eeeeee;
+}
 
 .flex {
   display: flex;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-colums {
+  display: flex;
+  flex-direction: column;
 }
