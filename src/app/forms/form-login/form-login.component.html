@@ -1,9 +1,15 @@
-<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-  <label for="login">Login: </label>
-  <input id="login" type="text" formControlName="login" />
+<div class="form-group">
+  <form class="login-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div class="flex-column form-field">
+      <label for="login">Login: </label>
+      <input id="login" type="text" formControlName="login" />
+    </div>
 
-  <label for="password">Password: </label>
-  <input id="password" type="text" formControlName="password" />
+    <div class="form-field">
+      <label for="password">Password: </label>
+      <input id="password" type="text" formControlName="password" />
+    </div>
 
-  <button type="submit" [disabled]="!loginForm.valid">Login</button>
-</form>
+    <button type="submit" [disabled]="!loginForm.valid">Login</button>
+  </form>
+</div>

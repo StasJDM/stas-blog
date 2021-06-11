@@ -1,5 +1,5 @@
 .header-container {
-  background: black;
+  background: #212121;
   width: 100%;
 }
 
@@ -16,12 +16,14 @@
 }
 
 span {
-  padding: 8px;
+  font-size: 18px;
+  padding: 8px 16px;
+  margin: auto 4px;
   color: white;
   cursor: pointer;
-  margin: auto 0;
 
   &:hover {
-    background: darkgray;
+    background: #424242;
+    border-radius: 4px;
   }
 }
