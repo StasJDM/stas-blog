@@ -1,16 +1,35 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PageBlogComponent } from './pages/page-blog/page-blog.component';
-import { PageHomeComponent } from './pages/page-home/page-home.component';
-import { PageLoginComponent } from './pages/page-login/page-login.component';
-import { PageProfileComponent } from './pages/page-profile/page-profile.component';
 
 const routes: Routes = [
-  { path: 'home', component: PageHomeComponent },
-  { path: 'blog', component: PageBlogComponent },
-  { path: 'profile', component: PageProfileComponent },
-  { path: 'login', component: PageLoginComponent },
-  { path: '**', component: PageHomeComponent },
+  {
+    path: 'blog',
+    loadChildren: () =>
+      import('./pages/page-blog/page-blog.module').then(
+        (m) => m.PageBlogModule
+      ),
+  },
+  {
+    path: 'home',
+    loadChildren: () =>
+      import('./pages/page-home/page-home.module').then(
+        (m) => m.PageHomeModule
+      ),
+  },
+  {
+    path: 'login',
+    loadChildren: () =>
+      import('./pages/page-login/page-login.module').then(
+        (m) => m.PageLoginModule
+      ),
+  },
+  {
+    path: 'profile',
+    loadChildren: () =>
+      import('./pages/page-profile/page-profile.module').then(
+        (m) => m.PageProfileModule
+      ),
+  },
 ];
 
 @NgModule({
