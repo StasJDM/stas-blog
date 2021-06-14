@@ -1,14 +1,14 @@
 <div class="form-group">
+  <h2>Welcome to the Stas's Blog</h2>
   <form class="login-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-    <div class="flex-column form-field">
-      <label for="login">Login: </label>
-      <input id="login" type="text" formControlName="login" />
-    </div>
+    <input placeholder="Login" id="login" type="text" formControlName="login" />
 
-    <div class="form-field">
-      <label for="password">Password: </label>
-      <input id="password" type="text" formControlName="password" />
-    </div>
+    <input
+      placeholder="Password"
+      id="password"
+      type="text"
+      formControlName="password"
+    />
 
     <button type="submit" [disabled]="!loginForm.valid">Login</button>
   </form>
