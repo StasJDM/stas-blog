@@ -6,10 +6,10 @@
     <input
       placeholder="Password"
       id="password"
-      type="text"
+      type="password"
       formControlName="password"
     />
 
-    <button type="submit" [disabled]="!loginForm.valid">Login</button>
+    <app-button [isDisabled]="!loginForm.valid" [text]="'Login'"></app-button>
   </form>
 </div>
