@@ -30,6 +30,13 @@ const routes: Routes = [
         (m) => m.PageProfileModule
       ),
   },
+  {
+    path: '**',
+    loadChildren: () =>
+      import('./pages/page-home/page-home.module').then(
+        (m) => m.PageHomeModule
+      ),
+  },
 ];
 
 @NgModule({
