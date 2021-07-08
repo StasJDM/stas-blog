@@ -1,5 +1,7 @@
-<app-publication></app-publication>
-<app-publication></app-publication>
-<app-publication></app-publication>
-<app-publication></app-publication>
-<app-publication></app-publication>
+<ng-container *ngFor="let publication of publications">
+  <app-publication
+    [author]="'stas'"
+    [date]="publication.date"
+    [text]="publication.text"
+  ></app-publication>
+</ng-container>

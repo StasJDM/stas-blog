@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-publication',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./publication.component.scss'],
 })
 export class PublicationComponent implements OnInit {
+  @Input() text: string = '';
+  @Input() date: string = '';
+  @Input() author: string = '';
+
   constructor() {}
 
   ngOnInit(): void {}
